@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fájlbeolvasás js -en keresztül</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Fájlból beolvasás Javascripten keresztül DOM gyakorlás</h1>
+    <img src="best-ways-to-learn-javascript.jpg" alt="kep">
+
+    <code>
+        <pre>
+            public class txtbeolvasas { 
+                public static List &ltString&gt nevek;
+                public static void main(String[] args) { 
+                    getData();
+                    System.out.println(nevek);
+                } 
+                public static void <span id="csere">???</span>() {
+                    try {
+                        nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.defaultCharset());
+                        //nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.forName("UTF-8"));
+                    } catch (IOException e) {
+                        System.out.println("Hiba");
+                    }
+                }
+
+
+        </pre>
+    </code>
+
+    <div id="kerdesek">
+        <h3>1.feladat</h3>
+
+        <p> Készíts nyomógombot 1 . feladat felirattal , ami bekér adotot beír a ???? helyére a public static void
+            sorban </p>
+        <br>
+        <label for="f1">Megoldást ide írd:</label>
+        <input type="text" name="" id="f1">
+        <button onclick="megoldas1()">1. feladat</button>
+        <br>
+        <button id="myBtn">Gomb másként (EventListener)</button>
+
+
+ <br>
+    <h3>2. feladat</h3>
+    <label for="igaz">igaz</label>
+    <input type="radio" name="feladat2" id="igaz" checked>
+    <label for="hamis">hamis</label>
+    <input type="radio" name="feladat2" id="hamis">
+    <button id="f2">Megoldás</button>
+    <div id="ide"></div>
+
+    </div>
+
+   
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
