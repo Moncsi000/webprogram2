@@ -1,6 +1,6 @@
 # webprogram2
 #addEventListener()
-click
+#click
 #mouseover,mouseout
 #checked
 
